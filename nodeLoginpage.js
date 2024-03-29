@@ -29,7 +29,7 @@ const app = express();
 //middleware for cookie-parser
 app.use(cookieParser());
 
-// to use and acccess  any (html,css,js) static file data -->> we have to use exact this "MIDDLEWARE"
+// in this project to use and acccess  any (html,css,js) static file data -->> we have to use exact this "MIDDLEWARE"
 app.use(express.static((path.join(path.resolve(), "public"))));
 
 //Authentication part-- making normal handler named as "isAuthenticated"
